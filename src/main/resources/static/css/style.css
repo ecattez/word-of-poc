@@ -1,6 +1,7 @@
 @import 'atoms.css';
 
 html, body {
+    margin: 0;
     font-family: Arial, serif;
     height: 100%;
 }
