@@ -1,0 +1,11 @@
+:root {
+    --color_white: #fff;
+    --color_dark: #393939;
+}
+
+button {
+    color: var(--color_white);
+    background-color: var(--color_dark);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+}
