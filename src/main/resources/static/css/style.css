@@ -1,11 +1,11 @@
 @import 'atoms.css';
 
-html {
+html, body {
     font-family: Arial, serif;
     height: 100%;
 }
 
-body {
+main {
     height: 100%;
     display: flex;
     flex-direction: column;

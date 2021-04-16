@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    margin: 0 1em;
+}
+
+header img {
+    height: 4em;
+}
