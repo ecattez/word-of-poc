@@ -19,6 +19,16 @@
   <a th:href="@{/}">
     <img th:src="@{/images/poc-icon.svg}" alt="Logo">
   </a>
+  <div class="lang-selector">
+    <form action="/" method="get">
+      <select id="lang" name="lang">
+        <option value=""></option>
+        <option value="en" th:text="#{lang.eng}"></option>
+        <option value="fr" th:text="#{lang.fr}"></option>
+      </select>
+      <button type="submit" th:text="#{select}"></button>
+    </form>
+  </div>
 </header>
 </body>
 
