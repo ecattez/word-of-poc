@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="html-head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{/css/fragments/header.css}">
+  <link rel="shortcut icon" href="images/poc-icon.svg" type="image/svg+xml">
+  <title>World of POC</title>
+</head>
+
+<body>
+<header th:fragment="header">
+  <a th:href="@{/}">
+    <img th:src="@{/images/poc-icon.svg}" alt="Logo">
+  </a>
+  <h1>World of POC</h1>
+  <a th:href="@{/}">
+    <img th:src="@{/images/poc-icon.svg}" alt="Logo">
+  </a>
+  <div class="lang-selector">
+    <form action="/" method="get">
+      <select id="lang" name="lang">
+        <option value=""></option>
+        <option value="en" th:text="#{lang.eng}"></option>
+        <option value="fr" th:text="#{lang.fr}"></option>
+      </select>
+      <button type="submit" th:text="#{select}"></button>
+    </form>
+  </div>
+</header>
+</body>
+
+</html>

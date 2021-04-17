@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header::html-head"></head>
+<body>
+  <header th:replace="~{fragments/header::header}"></header>
+  <main>
+    <div class="card">
+      <h2 th:text="#{characters_list}"></h2>
+      <form action="/game/select-character" method="post">
+        <ul th:each="character: ${characters}">
+          <li>
+            <input type="radio" th:id="${character.getId()}" name="character" th:value="${character.getId()}"/>
+            <label th:text="${character.getName()}" th:for="${character.getId()}">name</label>
+          </li>
+        </ul>
+        <button type="submit" th:text="#{create_character}"></button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

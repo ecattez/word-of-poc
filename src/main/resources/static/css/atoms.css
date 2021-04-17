@@ -1,0 +1,24 @@
+:root {
+  --color_white: #fff;
+  --color_dark: #393939;
+}
+
+button, select {
+  color: var(--color_white);
+  background-color: var(--color_dark);
+  border: 1px solid transparent;
+  padding: 10px 20px;
+}
+
+.card {
+  border: 2px solid var(--color_dark);
+  padding: 1em;
+}
+
+.card li {
+  list-style: none;
+}
+
+.card button[type=submit] {
+  float: right;
+}
