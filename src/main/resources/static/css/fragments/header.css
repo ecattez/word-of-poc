@@ -1,0 +1,17 @@
+:root {
+    --header_height: 4em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    margin: 0 1em;
+}
+
+header img {
+    height: var(--header_height);
+}

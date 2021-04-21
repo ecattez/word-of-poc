@@ -1,0 +1,15 @@
+@import 'atoms.css';
+
+html, body {
+    margin: 0;
+    font-family: Arial, serif;
+    height: 100%;
+}
+
+main {
+    height: calc(100% - var(--header_height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
